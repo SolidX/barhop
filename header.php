@@ -2,9 +2,9 @@
 <html lang="en-US" style="height:100%;">
   <head>
     <!-- Meta -->
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-    <meta name="viewport" content="width=device-width" initial-scale="1">
-    <meta name="generator" content="Anchor CMS">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1" />
+    <meta name="generator" content="Anchor CMS" />
     <!-- Page Title -->
     <title><?php echo page_title("Page can't be found"); ?> - <?php echo site_name(); ?></title>
     <!-- Asset Links -->
@@ -12,6 +12,15 @@
     <link rel="shortcut icon" href="<?php echo theme_url('assets/favicon.ico'); ?>" type="image/x-icon" />
     <link href='//fonts.googleapis.com/css?family=Merriweather:300,400,900|Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<?php if (article_full_url()): ?>
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="<?php echo article_full_url() ?>" />
+		<meta property="og:title" content="<?php echo article_title() ?>" />
+		<meta property="og:description" content="<?php echo article_description() ?>" />
+	<?php endif; ?>
+	<?php if (article_custom_field('featured_image')): ?>
+		<meta property="og:image" content="<?php echo article_custom_field('featured_image') ?>" />
+	<?php endif; ?>
   </head>
   
   <body>
