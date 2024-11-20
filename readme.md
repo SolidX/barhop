@@ -13,7 +13,7 @@ See a [live demo](http://ohheybrian.com/anchor)
 
 Currently, the Barhop theme is only available for Anchor. I'm planning on porting it over to Wordpress if I can get around to it.
 
-##Setup
+## Setup
 
 There are a few customizations you'll need to make in order to take advantage of the features.
 
@@ -34,7 +34,7 @@ Barhop uses featured images to give a clean, modern look to your blog, but it mu
 
 **If you do not set up a featured image, or don't set an image, a random color will be applied to the Home page and the post header.**
 
-### Twitter
+### Twitter / Bluesky
 Anchor CMS is so light because it comes completely unconfigured.
 
 Set up a reusable username variable:
@@ -43,11 +43,14 @@ Set up a reusable username variable:
 2. Enter the following in the config form:
    - Name: **twitter_account**
    - Value: **yourusername** - do **not** include '@'!
+3. Enter the following in the config form:
+   - Name: **bluesky_account**
+   - Value: **yourusername** - do **not** include '@'!   
 
 ## Credits
 
-This theme is built for [Anchor CMS](http://www.anchorcms.com).
+This theme is built for [Anchor CMS](https://github.com/anchorcms/anchor-cms).
 
 ## License
 
-Barhop is created by [Brian Bennett](http://ohheybrian.com) (2014) is licensed with [The MIT License](http://opensource.org/licenses/MIT) and is free to use, modify and distribute.
+Barhop was created by [Brian Bennett](http://ohheybrian.com) (2014) is licensed with [The MIT License](http://opensource.org/licenses/MIT) and is free to use, modify and distribute.

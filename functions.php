@@ -1,11 +1,11 @@
 <?php
 
-function twitter_account() {
-    return Config::get('meta.twitter');
+function twitter_url() {
+    return 'https://www.twitter.com/' . site_meta('twitter_account');
 }
 
-function twitter_url() {
-    return 'http://www.twitter.com/' . site_meta('twitter_account');
+function bluesky_url() {
+    return 'https://bsky.app/profile/' . site_meta('bluesky_account');
 }
 
 function pluralise($amount, $str, $alt = '') {

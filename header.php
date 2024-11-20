@@ -65,6 +65,9 @@
 	  <?php if(site_meta('twitter_account')) : ?>
 	  <li><a href="<?php echo twitter_url(); ?>">Twitter</a></li>
 	  <?php endif; ?>
+	  <?php if(site_meta('bluesky_account')) : ?>
+	  <li><a href="<?php echo bluesky_url(); ?>">Bluesky</a></li>
+	  <?php endif; ?>
 	  <?php if(user_authed()) : ?>
 	  <li><a href="<?php echo base_url('/admin'); ?>">Admin</a></li>
 	  <?php endif; ?>

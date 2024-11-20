@@ -645,7 +645,7 @@ article .meta p {
   font-size:1.5rem;
   text-align:left;
 }
-.share img {
+.share img, .share svg {
   height:24px;
   width:auto;
   float:right;
